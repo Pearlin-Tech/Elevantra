@@ -78,48 +78,55 @@
 </div>
 
 </body>
-
 <script>
 
 function formvalidate(){
-let name=document.getElementById("name1").value
-let email=document.getElementById("email1").value
-let number=document.getElementById("number1").value
-let textf=document.getElementById("textf").value
 
-if(name==""){
+let name = document.getElementById("name1").value;
+let email = document.getElementById("email1").value;
+let number = document.getElementById("number1").value;
+let textf = document.getElementById("textf").value;
+
+if(name == ""){
   alert("Name cannot be empty");
   return false;
 }
-if(name.length<3){
-  document.getElementById("formerror1").innerText="Enter a valid name";
+
+if(name.length < 3){
+  document.getElementById("formerror1").innerText = "Enter a valid name";
   return false;
 }
-if(email==""){
+
+if(email == ""){
   alert("Email cannot be empty");
   return false;
 }
-if(email==!"/^[^\s@]+@[^\s@]+\.[^\s@]+$/"){
-  document.getElementById("formerror2").innerText="Enter a valid email";
+
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+  document.getElementById("formerror2").innerText = "Enter a valid email";
   return false;
 }
-if(number==""){
+
+if(number == ""){
   alert("Mobile Number cannot be empty");
   return false;
 }
-if(number==!"/^[0-9]{10}$/"){
-  document.getElementById("formerror3").innerText="Enter a valid Number";
+
+if(!/^[0-9]{10}$/.test(number)){
+  document.getElementById("formerror3").innerText = "Enter a valid Number";
   return false;
 }
-if(textf==""){
+
+if(textf == ""){
   alert("Text Area cannot be empty");
   return false;
 }
 
+return true;
+
 }
 
 </script>
-
 
 
 
