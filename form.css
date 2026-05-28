@@ -1,0 +1,265 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      border-bottom: 2px solid black;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+    }
+
+    #left {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    #r7 {
+      background-color: red;
+      height: 13px;
+      width: 13px;
+    }
+
+    #axis {
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    #b1 {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    #right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #b2, #b3, #b4 {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    #index {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      padding: 10px 20px;
+    }
+
+    #contact {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: red;
+      padding: 10px 20px;
+    }
+
+    #start {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      background: black;
+      color: white;
+      padding: 12px 22px;
+    }
+
+    /* MAIN LAYOUT */
+    #main {
+      display: flex;
+      height: calc(100vh - 58px);
+    }
+
+    /* LEFT SIDE */
+    #left-panel {
+      width: 49%;
+      background-color: black;
+      color: white;
+      padding: 44px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #contact-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: #888;
+    }
+
+    #big-heading {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 0.92;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    #big-heading span {
+      color: red;
+    }
+
+    #sub-text {
+      color: #999;
+      font-size: 15px;
+      line-height: 1.65;
+      margin-top: 24px;
+      max-width: 360px;
+    }
+
+    #contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    #contact-details p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* RIGHT SIDE */
+    #right-panel {
+      width: 51%;
+      background-color: white;
+      padding: 44px 68px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #brief-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: #888;
+      margin-bottom: 14px;
+    }
+
+    #form-heading {
+      font-size: 34px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 34px;
+    }
+
+    /* FORM FIELDS */
+    .field {
+      margin-bottom: 28px;
+    }
+
+    .field-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .field-label span {
+      color: #999;
+      margin-right: 8px;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid #ccc;
+      outline: none;
+      font-size: 15px;
+      font-family: Arial;
+      color: black;
+      padding: 8px 0 12px;
+      background: transparent;
+    }
+
+    .field textarea {
+      resize: none;
+      height: 100px;
+      line-height: 1.6;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: #bbb;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-bottom-color: black;
+    }
+
+    /* FOOTER */
+    #form-footer {
+      border-top: 1.5px solid #ccc;
+      padding-top: 20px;
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    #privacy {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.55;
+      max-width: 300px;
+    }
+
+    #btn1 {
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 20px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    #btn1:hover {
+      background: red;
+    }
+
+    #formerror1{
+        font-size: 12px;
+        color: red;
+        
+    }
+
+     #formerror2{
+        font-size: 12px;
+        color: red;
+        
+    }
+
+     #formerror3{
+        font-size: 12px;
+        color: red;
+        
+    }
+
+     #formerror4{
+        font-size: 12px;
+        color: red;
+        
+    }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AXIS/FORM - Contact</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <button id="b1">
+    <div id="left">
+      <div id="r7"></div>
+      <a href="index.html"><span id="axis">AXIS/FORM</span></a>
+    </div>
+  </button>
+  <div id="right">
+    <button id="b2"><a href="index.html"><span id="index">INDEX</span></a></button>
+    <button id="b3"><span id="contact">CONTACT</span></button>
+    <button id="b4"><a href="form.html"><div id="start">START A PROJECT -></div></a></button>
+  </div>
+</header>
+
+
+<div id="main">
+
+  <!-- LEFT -->
+  <div id="left-panel">
+    <div>
+      <p id="contact-label">[ CONTACT ]</p>
+      <h1 id="big-heading">START A<br><span>PROJECT.</span></h1>
+      <p id="sub-text">Tell us about your brief. The more specific, the better — budget, timing, and the problem you're trying to solve.</p>
+    </div>
+
+    <div id="contact-details">
+      <p>@ &nbsp; hello@axisform.studio</p>
+      <p>T &nbsp; +49 30 555 0144</p>
+      <p>O &nbsp; Linienstraße 154, 10115 Berlin</p>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div id="right-panel">
+    <p id="brief-label">[ BRIEF ]</p>
+    <h2 id="form-heading">FILL IN THE FOUR FIELDS BELOW.</h2>
+
+    <form action="" name="MyForm" onsubmit="return formvalidate()" method="post">
+
+    <div class="field">
+      <p class="field-label"><span>01</span> NAME</p>
+      <input type="text" placeholder="Sasha Lindgren" id="name1"><span id="formerror1"><b></b></span>
+    </div>
+
+    <div class="field">
+      <p class="field-label"><span>02</span> EMAIL</p>
+      <input type="email" placeholder="you@studio.com" id="email1"><span id="formerror2"><b></b></span>
+    </div>
+
+    <div class="field">
+      <p class="field-label"><span>03</span> Mobile Numeber</p>
+      <input type="number" placeholder="+919698696666" id="number1"><span id="formerror3"><b></b></span>
+    </div>
+
+    <div class="field">
+      <p class="field-label"><span>04</span> MESSAGE</p>
+      <textarea placeholder="Goals, audience, timeline, budget range..." id="textf"></textarea><span id="formerror4"><b></b></span>
+    </div>
+
+    <div id="form-footer">
+      <p id="privacy">By submitting, you agree to our privacy policy. We never share briefs.</p>
+      <button id="btn1" type="submit">SEND MESSAGE -></button>
+
+    </div>
+   </form>
+  </div>
+</div>
+
+</body>
+
+<script>
+
+function formvalidate(){
+let name=document.getElementById("name1").value
+let email=document.getElementById("email1").value
+let number=document.getElementById("number1").value
+let textf=document.getElementById("textf").value
+
+if(name==""){
+  alert("Name cannot be empty");
+  return false;
+}
+if(name.length<3){
+  document.getElementById("formerror1").innerText="Enter a valid name";
+  return false;
+}
+if(email==""){
+  alert("Email cannot be empty");
+  return false;
+}
+if(email==!"/^[^\s@]+@[^\s@]+\.[^\s@]+$/"){
+  document.getElementById("formerror2").innerText="Enter a valid email";
+  return false;
+}
+if(number==""){
+  alert("Mobile Number cannot be empty");
+  return false;
+}
+if(number==!"/^[0-9]{10}$/"){
+  document.getElementById("formerror3").innerText="Enter a valid Number";
+  return false;
+}
+if(textf==""){
+  alert("Text Area cannot be empty");
+  return false;
+}
+
+}
+
+</script>
+
+
+
+
+</html>
