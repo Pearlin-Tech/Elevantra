@@ -112,22 +112,19 @@ color: black;
     width: 40%;
 }
 
-img{
-    height: 520px;
-    width: 410px;
-    image-resolution: inherit;   
-    margin-left: 100px; 
-    border: 2px solid black;
-    margin-top: 135px;
-}
+img { height: auto; 
+    width: 100%; 
+    max-width: 410px;
+     margin-left: 20%; 
+    margin-top: 25%;}
+
 
 
 #rt1{
-    width: 410px;   /* same as image width */
-    text-align: left;
-    margin-top: 20px;
-    font-size: 18px;
-    margin-left:100px ;
+    width: 100%; 
+    max-width: 410px;
+    font-size: 2ch;
+    margin-left:20% ;
    font-weight: 200;
    font-family: Arial, Helvetica, sans-serif;
 }
@@ -146,7 +143,7 @@ img{
 }
 
 h1{
-    font-size: 140px;
+    font-size: clamp(3rem, 10vw, 140px);
     line-height: 0.9;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -160,6 +157,7 @@ h1 span{
 #btn{
     margin-top: 50px;
     
+    
 }
 
 #btn1{
@@ -170,6 +168,7 @@ color: aliceblue;
     padding: 20px 60px;
     cursor:pointer;
     font-size:18px;
+    margin-left: 25%;
 
 
  transition:
@@ -187,7 +186,8 @@ color: aliceblue;
     background: none;
     text-decoration: none;
     border: 2px solid black;
-margin-left: 18pxpx;
+margin-left: 25%;
+margin-top: 12px;
 padding: 20px 60px;
 cursor:pointer;
 font-size:18px ;
@@ -198,3 +198,6 @@ font-size:18px ;
 color: aliceblue;
 }
 
+@media(max-widh:932px){
+    
+}
