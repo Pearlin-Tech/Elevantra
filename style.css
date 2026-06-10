@@ -198,6 +198,62 @@ font-size:18px ;
 color: aliceblue;
 }
 
-@media(max-widh:932px){
+@media (max-width: 480px), (max-height: 932px) and (max-width: 480px) {
+html, body {
+  overflow-x: hidden;
+}
+header{
+    width:100% ;
+    border: 2px solid black;
+     padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    justify-content: space-between;
     
+}
+
+#index{
+    font-size: 14px;
+    color: red;
+    padding: 2px;
+}
+
+#contact{
+    font-size: 14px;
+    padding: 2px;
+}
+#start{
+    display: none;
+}
+#right{
+    margin-left: 28%;
+}
+
+#main{
+    display: block;
+}
+
+#text7{
+    font-size: 2ch;
+}
+
+h1{
+    font-size: 7ch;
+    padding: 0%;
+}
+
+img{
+    display: none;
+}
+
+#rt1{
+    display:none;
+}
+
+  #btn2{
+    width:250px;
+
+}
+
 }
